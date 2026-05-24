@@ -1,0 +1,225 @@
+.update_pro_container {
+  position: relative;
+}
+.update_pro_detail {
+  position: absolute;
+  right: 0px;
+  width: 700px;
+  top: 0px;
+  background: white;
+  padding: 20px;
+  border: 2px solid #eee;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+  border-radius: 10px;
+}
+.update_pro_detail > div > button {
+  margin-top: 10px;
+}
+
+.admin_all_infos .change_item_status {
+  margin-bottom: 10px;
+}
+.admin_all_infos  .update_pro_descr {
+  margin-bottom: 10px;
+}
+.set_similar_item {
+  padding: 10px;
+  background: #eff3f6;
+  cursor: pointer;
+}
+
+.similar_input_container {
+  position: relative;
+}
+.item_search_result {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: #f9f9f9;
+  box-shadow: 0px 5px 3px rgba(0,0,0,.1);
+}
+.item_search_result ul {
+  margin: 0px !important;
+  padding: 0px !important;
+  list-style: none !important;
+}
+.item_search_result ul li {
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+.item_search_result ul li:last-child {
+  border: none;
+}
+
+.search_user_by {
+  margin-bottom: 10px;
+}
+.search_user_by form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search_user_by form input {
+  width: 200px;
+  height: 34px;
+  border-radius: 3px 0px 0px 3px;
+}
+.search_user_by form button {
+  height: 34px;
+  border-radius: 0px 3px 3px 0px;
+}
+.search_user_by form input:focus {
+  outline: none;
+}
+.search_status_by{
+  margin-bottom: 15px;
+}
+
+.connect_to_item_form {
+  display: flex;
+}
+.connect_to_item_form input {
+  max-width: 80px;
+  height: 34px;
+  flex: 0 0 80px;
+  margin-right: 5px;
+}
+.connect_to_item_form button {
+  flex: 0 0 80px;
+  max-width: 80px;
+}
+.search_cat_by{
+  margin-bottom: 15px;
+}
+.search_cat_by select{
+  width: auto;
+}
+
+.update_item_status {
+  border: 1px solid #00000047;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left;
+}
+.update_item_status select {
+  margin-bottom: 5px;
+}
+.update_item_status textarea {
+  margin-bottom: 5px;
+}
+
+.invalid input {
+  width: 50px;
+  font-size: 10px !important;
+  padding: 5px;
+}
+
+.search_admin_col > * {
+  margin-right: 5px;
+  display: inline-block;
+  width: auto !important;
+  margin-bottom: 5px;
+}
+.search_admin_col {
+  margin-bottom: 20px;
+}
+
+.deduct_payment_con input[type="text"] {
+  width: 100px;
+  height: 34px;
+}
+.deduct_payment_con button {
+  height: 34px;
+}
+.deduct_payment_con input[type="text"]:focus {
+  outline: none;
+}
+
+.ban_inp {
+  width: 100% !important;
+  height: 34px !important;
+  max-width: 150px;
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.section-msg div.m span{
+    white-space: break-spaces !important;
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+

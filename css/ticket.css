@@ -1,0 +1,445 @@
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.chat-section{
+    flex-grow: 20;
+}
+.ticket_extra_info {
+  font-size: 12px;
+  color: #a4a4a4;
+}
+.red-ticket{
+    background-color: red;
+}
+.yellow-ticket{
+    background-color: yellow;
+}
+.green-ticket{
+    background-color: green;
+}
+
+[data-current-chat]{
+    overflow-y: auto;
+    border-bottom: 1px solid #eff0f7;
+    height: 70vh;
+    background-color: white;
+    padding: 3px;
+}
+
+.ticket-list-user{
+    flex-grow: 3;
+    background-color: white;
+    border-right: 1px solid #eff0f7;
+    position: relative;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.ticket-input-section{
+    background-color: white;
+}
+.solved-unsolved-section{
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.solved-unsolved-section p {
+    margin-top: 0;
+}
+
+.solved_unsolved_button_section button {
+    margin-right: 20px;
+    padding: 0px 10px;
+}
+
+#search-ticket-list{
+    flex-grow: 1;
+    height: 37px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    padding: 0 5px;
+    color: #6f6f6f;
+    width: 100%;
+}
+
+.ticket-list-user-down{
+    border-top: 1px solid #eff0f7;
+}
+
+[data-tickets-filter]{
+    height: 30px !important;
+}
+[data-current-chat] .self{
+    text-align: right;
+    margin-left: 20%;
+    margin-right: 1%;
+}
+[data-current-chat] .self .section-msg{
+    background-color: #577dc7;
+    color: white;
+}
+[data-current-chat] .self .section-msg .m span a {
+    color: #ffd900;
+}
+[data-current-chat] .self .section-msg .m{
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+[data-current-chat] .voice{
+    margin-left: 1%;
+    margin-right: 20%;
+}
+[data-current-chat] .voice .section-msg{
+    background-color: #f7f8fc;
+}
+[data-current-chat] .voice .section-msg .m{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+[data-current-chat] .section-msg{
+    padding: 5px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+[data-current-chat] .new-messages{
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    z-index: 5;
+    position: relative;
+}
+.divide{
+    position: relative;
+    text-align: center;
+    border: 1px solid #eff0f7;
+    background-color: #ff5959;
+}
+.tickets-main{
+    background-color: white;
+}
+#ticket-form-submit{
+    width: 100%;
+}
+.message-msg{
+    margin: 2px 0;
+    padding: 5px 8px;
+    font-size: 13px;
+    border-radius: 1px;
+    overflow-wrap: anywhere;
+}
+.message-msg .author{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 3px;
+}
+.message-msg .date-msg{
+    margin: 0 3px;
+    color: #959ba7;
+}
+.message-msg .status-msg{
+    height: 8px;
+    margin-right: 3px;
+    margin-top: 6px;
+}
+.message-msg .status-msg.read{
+    background: url(../../../../img/icons/msg/read.svg) no-repeat 0 0;
+    width: 14px;
+}
+.message-msg .status-msg.delivered{
+    -webkit-mask: url(../../../../img/icons/msg/read.svg) no-repeat 0 0;
+    mask: url(../../../../img/icons/msg/read.svg) no-repeat 0 0;
+    background-color: #959ba7;
+    width: 14px;
+}
+.message-msg.self .author{
+    order: 1;
+}
+.message-msg.self .date-msg{
+    order: 2;
+}
+.message-msg.self .status-msg{
+    order: -1;
+}
+.msg-section-author{
+    display: flex;
+}
+.self .msg-section-author{
+    justify-content: flex-end;
+}
+
+.ticket_list_item:hover{
+    background-color: #e7e7e7 !important;
+    cursor: pointer;
+}
+.active.ticket_list_item{
+    background-color: #e3ebfc;
+}
+[data-my-chats-js]{
+    margin: 3px;
+    height: 69vh;
+    overflow-y: auto;
+}
+[data-my-chats-js] div{
+    padding: 1px 5px 1px 5px;
+    border-bottom: 1px solid #e3ebfc;
+}
+[data-my-chats-js] div p{
+    margin: 5px 0!important;
+}
+.ticket-list-last-time{
+    color: #a4a4a4;
+    font-size: 12px;
+}
+.ticket-list-message{
+    font-size: 12px;
+}
+.ticket-list-item-email{
+    font-size: 12px;
+}
+.ticket-list-item-ticket-id{
+    font-size: 12px;
+}
+[data-item-client-unread-count-js] {
+    top: -2px;
+    left: 30px;
+    z-index: 9;
+    background: #ed4b68;
+    padding: 2px 4px;
+    line-height: .4;
+    border-radius: 30px;
+    height: 10px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #fff;
+}
+.ticket-list-user-up {
+    height: 70vh;
+    overflow-y: auto;
+    
+}
+.ticket-list-user-down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.ticket-input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.ticket-input-section > input {
+    flex-grow: 1;
+    height: 37px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    padding: 0 5px;
+    color: #6f6f6f;
+}
+.ticket-input-section button {
+    text-indent: 99999px;
+    background: transparent url(../img/icons/send.svg) no-repeat center;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+}
+.ticket-input-section .file-input-wrapper {
+    position: relative;
+    width: 35px;
+    height: 37px;
+    border-radius: 2px;
+}
+
+.ticket-input-section .file-input-wrapper input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 0.1em;
+    height: 0.1em;
+}
+
+.ticket-input-section .file-input-wrapper input + label {
+    text-indent: 99999px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/icons/attach.svg) no-repeat center;
+    cursor: pointer;
+}
+.folding {
+    display: none;
+}
+
+#ticket_form .attachments {
+    background: #ffffff;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.chat-section-empty{
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding-top: 50%;
+}
+
+.ticket_list_item.has_unread_chat .ticket-list-message {
+  font-weight: 700;
+}
+.ticket_list_item.has_unread_chat .ticket-list-last-time {
+  font-weight: 700;
+  color: #000;
+}
+
+
+@media (max-width: 600px) {
+    /* Existing legacy styles - overridden below */
+}
+
+.not-alow-zaglushka{
+    padding-top: 25%;
+    padding-left: 25%;
+    color: red;
+}
+.ticket-msg-score{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    caret-color: transparent;
+}
+.ticket-msg-score span{
+    width: 100%;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.ticket-msg-score > span:hover{
+    box-shadow: 0 0 5px 2px rgb(236, 236, 236);
+}
+.ticket-msg-score span:not(:first-child){
+    margin-left: 10px;
+}
+.t-score{
+    display: flex;
+    flex-direction: row;
+}
+.t-score span{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+.t-score img{
+    display: block;
+    margin: 0 auto;
+}
+.t-score.very-bad{
+    font-size: 10px;
+}
+.ticket-msg-href{
+    color: yellow !important;
+}
+
+.ticket_list_item.has_unread_chat {
+  position: relative;
+}
+.ticket_list_item.has_unread_chat:before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e80000;
+  top: calc(50% - 5px);
+}
+
+.section-msg div.m span{
+    white-space: break-spaces !important;
+}
+
+/* NEW MOBILE STYLES */
+.mobile-back-btn-wrapper {
+    display: none;
+    padding: 10px;
+    background: #f7f8fc;
+    border-bottom: 1px solid #eff0f7;
+}
+.mobile-back-btn {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .flex-container.ticket-section {
+        display: block; /* Stack elements */
+    }
+    
+    .ticket-list-user {
+        width: 100% !important;
+        border-right: none;
+        flex-grow: 1;
+        min-width: 0;
+    }
+    
+    .chat-section {
+        width: 100%;
+        border-left: none;
+    }
+
+    /* Logic:
+       - Default (No ticket selected): Show List, Hide Chat
+       - Ticket Selected (.ticket-details-open): Hide List, Show Chat
+    */
+
+    /* Default State */
+    .chat-section {
+        display: none;
+    }
+    .ticket-list-user {
+        display: block;
+    }
+
+    /* Ticket Open State */
+    .ticket-section.ticket-details-open .ticket-list-user {
+        display: none;
+    }
+    .ticket-section.ticket-details-open .chat-section {
+        display: block;
+    }
+    
+    .mobile-back-btn-wrapper {
+        display: block;
+    }
+    
+    /* Ensure height is dynamic on mobile */
+    [data-current-chat] {
+        height: 70vh; /* Fixed height for chat area */
+        overflow-y: auto; /* Enable scrolling within the chat area */
+    }
+    
+    [data-my-chats-js] {
+        height: auto;
+        min-height: 70vh;
+        max-height: 80vh;
+    }
+    
+    /* Hide the folding button on new mobile view if it interferes */
+    .ticket-section button.folding {
+        display: none !important;
+    }
+}

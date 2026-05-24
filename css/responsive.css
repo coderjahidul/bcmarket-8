@@ -1,0 +1,36 @@
+@media all and (max-width:992px){
+
+	.ftr-top .flex {
+	    padding: 20px 0px 0px 0px;
+	    overflow: hidden;
+	}
+	.col-33.flex.footer_menu {
+	    padding-top: 0px;
+	}
+	.col-33.ftr-last-col ul {
+	    margin: 0px;
+	    padding: 0px 0px 20px 0px;
+	}
+	div#sitemap {
+	    padding-top: 10px;
+
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.ftr-center .flex {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.soc-category .flex h2, .soc-category .flex p, .soc-category .flex h1 {
+	    margin-bottom: 15px;
+	    line-height: 1.4;
+	}
+
+	.soc-bl {
+	    margin-bottom: 20px;
+	}
+	.soc-price p {
+	    margin-bottom: 0px !important;
+	}
+
+}

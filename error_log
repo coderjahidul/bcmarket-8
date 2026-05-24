@@ -1,0 +1,24 @@
+[12-Oct-2023 12:18:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2
+[25-Oct-2023 02:48:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2
+[01-Nov-2023 03:10:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2
+[08-Nov-2023 02:56:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2
+[08-Nov-2023 02:56:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2
+[17-Nov-2023 12:11:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/accountsseller/public_html/wp-content/themes/bcmarket-6/index.php on line 2

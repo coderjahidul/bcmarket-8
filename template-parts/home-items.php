@@ -1,58 +1,16 @@
  <div class="soc-bl">
 
-    <?php 
-    
-  
+    <?php
 
-        $terms = get_terms( array(
-            'taxonomy' => 'item_cat',
-            'orderby' => 'meta_value_num',
-            'order' => 'ASC',
-            'meta_query' => array(
-                'relation' => 'OR',
-                array(
-                    'key' => 'item_order',
-                    'compare' => 'NOT EXISTS'
-                ),
-                array(
-                    'key' => 'item_order',
-                    'value' => 0,
-                    'compare' => '>='
-                )
-            ),
-            'hide_empty' => true,
-            'parent' => 0
-        ) );
+        $ordered_sections = bcmarket_get_homepage_section_order();
 
-        if($terms) : 
+        if ( $ordered_sections ) :
 
-            foreach($terms as $term) : 
-                $termchildren = get_term_children( $term->term_id, 'item_cat');
+            foreach ( $ordered_sections as $section ) :
+                $term  = $section['parent'];
+                $child = $section['child'];
 
-                $terms = get_terms( array(
-                    'taxonomy' => 'item_cat',
-                    'orderby' => 'meta_value_num',
-                    'order' => 'ASC',
-                    'meta_query' => array(
-                        'relation' => 'OR',
-                        array(
-                            'key' => 'item_order',
-                            'compare' => 'NOT EXISTS'
-                        ),
-                        array(
-                            'key' => 'item_order',
-                            'value' => 0,
-                            'compare' => '>='
-                        )
-                    ),
-                    'hide_empty' => true,
-                    'parent' => $term->term_id
-                ) );
-
-
-                if($terms) : 
-
-                    foreach ( $terms as $child ) :
+                if ( 'child' === $section['type'] && $child ) :
 
                         $pr_query = new WP_Query(array(
                             'post_type' => 'item', 
@@ -503,12 +461,11 @@
                             </div> 
                          
 
-                        <?php 
+                        <?php
 
-                        endif; 
-                    endforeach; 
+                        endif;
 
-                else : 
+                else :
 
                     $parent_pro_query = new WP_Query(array(
                         'post_type' => 'product', 
@@ -542,12 +499,12 @@
                                 <button type="button" data-cat="<?php echo $term->term_id; ?>" class="expand_subcat_button">View all</button>
                             </div>
 
-                        <?php 
+                        <?php
 
                         endif;
 
-                endif; 
-            endforeach; 
-        endif; 
+                endif;
+            endforeach;
+        endif;
     ?>
 </div>

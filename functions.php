@@ -319,6 +319,7 @@ require get_template_directory() . '/inc/product-buy.php';
 require get_template_directory() . '/inc/accounts.php';
 require get_template_directory() . '/inc/partner-functions.php';
 require get_template_directory() . '/inc/admin-functions.php';
+require get_template_directory() . '/inc/homepage-section-order.php';
 require get_template_directory() . '/inc/tickets.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/subscriber-mail/send-subscriber-mail.php';

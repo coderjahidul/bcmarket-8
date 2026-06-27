@@ -1,4 +1,3 @@
-
 <?php 
 add_action('wp_ajax_new_tickets', 'new_tickets_callback');
 add_action('wp_ajax_nopriv_new_tickets', 'new_tickets_callback');
